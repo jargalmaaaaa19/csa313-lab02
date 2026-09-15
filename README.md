@@ -1,3 +1,10 @@
+# Lab 02: Performance Measurement with k6
+
+## 1. Environment & k6 Version
+Энэхүү лабораторийн ажлыг WSL2 (Ubuntu) орчинд гүйцэтгэж, k6 хэрэгслийг албан ёсны сангаас амжилттай суулгасан.
+```bash
+k6 v2.2.0 (commit/00a9a1b7f5, go1.26.5, linux/amd64)
+
 user@DESKTOP-9HU6DH7:~$ sudo gpg -k
 [sudo] password for user:
 gpg: directory '/root/.gnupg' created
@@ -72,4 +79,3 @@ p(95)=530.37ms 5vu
 p(95)=495.64ms 30vu
 
 p(95)=509.1ms 100vu
-
