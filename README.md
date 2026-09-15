@@ -63,3 +63,13 @@ Preparing to unpack .../archives/k6_2.2.0_amd64.deb ...
 Unpacking k6 (2.2.0) ...
 Setting up k6 (2.2.0) ...
 k6 v2.2.0 (commit/00a9a1b7f5, go1.26.5, linux/amd64)
+
+
+p(95)=481.31ms анхны бүгдийн туршисан туршилт
+
+p(95)=530.37ms 5vu
+
+p(95)=495.64ms 30vu
+
+p(95)=509.1ms 100vu
+
