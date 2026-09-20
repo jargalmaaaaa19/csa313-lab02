@@ -1,6 +1,8 @@
-# Lab 02: Performance Measurement with k6
+Оюутны код: B232270005, Нэр: З.Жаргалмаа
 
-## 1. Environment & k6 Version
+Lab 02: Performance Measurement with k6
+
+1. Environment & k6 Version
 Энэхүү лабораторийн ажлыг WSL2 (Ubuntu) орчинд гүйцэтгэж, k6 хэрэгслийг албан ёсны сангаас амжилттай суулгасан.
 ```bash
 k6 v2.2.0 (commit/00a9a1b7f5, go1.26.5, linux/amd64)
@@ -71,16 +73,6 @@ Unpacking k6 (2.2.0) ...
 Setting up k6 (2.2.0) ...
 k6 v2.2.0 (commit/00a9a1b7f5, go1.26.5, linux/amd64)
 
-Туршилтын үр дүн:
-
-анхны бүгдийн туршисан туршилт: p(95)=481.31ms 
-
-5vu: p(95)=530.36ms
-
-30vu: p(95)=495.64ms 
-
-100vu: p(95)=509.1ms 
-
 SLO (Service Level Objective) & Thresholds
 
 Сонгосон Threshold: http_req_duration: ['p(95)<800'] болон http_req_failed: ['rate<0.01'].  Үндэслэл: Анхны 5 VU үед гарсан baseline p95 (530.37ms) утга дээр суурилан сүлжээний болон сервер талын түр зуурын хэлбэлзлийг тооцож, чанарын босгыг p(95) < 800ms байхаар үндэслэлтэйгээр тогтоов. Энэхүү босго нь k6 тест автоматаар PASS эсвэл FAIL болохыг шалгах quality gate үүрэг гүйцэтгэдэг.  
@@ -89,9 +81,9 @@ Load Testing Results (Гүйцэтгэлийн хэмжилтийн хүснэг
 
 | VU Түвшин | p90 Latency | p95 Latency | Throughput (Reqs/sec) | Error Rate |
 | :--- | :--- | :--- | :--- | :--- |
-| **5 VU** | 459.46ms | 530.37ms | 6.10 req/s | 0.00% |
-| **30 VU** | 439.25ms | 495.64ms | 36.76 req/s | 0.00% |
-| **100 VU** | 450.62ms | 509.10ms | 116.80 req/s | 0.00% |
+| **5 VU** | 473.45ms | 508.89ms | 5.54req/s | 0.00% |
+| **30 VU** | 455.84ms | 466ms | 34.59 req/s | 0.00% |
+| **100 VU** | 460.48ms | 470.28ms | 113.30 req/s | 0.00% |
 
 https://test.k6.io руу 5 VU, 30 VU, 100 VU гэсэн гурван өөр түвшингөөр тус бүр 1 минутын турш ачаалал өгч хэмжсэн үр дүнг доорх хүснэгтэд үзүүлэв:
 
