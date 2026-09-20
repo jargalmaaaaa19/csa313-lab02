@@ -67,7 +67,7 @@ export const options = {
   duration: "1m",      // 1 минутын хугацаа
   thresholds: {
     // Baseline (508.89ms) * 1.5 = ~763ms гэж SLO тогтоов
-    http_req_duration: ['p(95)<763'], 
+    http_req_duration: ['p(95)<50'], 
     // Алдааны хувь 1%-аас бага байх ёстой
     http_req_failed:   ['rate<0.01'],  
   },
