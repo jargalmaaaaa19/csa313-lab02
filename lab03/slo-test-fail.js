@@ -2,12 +2,12 @@ import http from 'k6/http';
 import { check, sleep } from 'k6';
  
 export const options = {
-  vus: 20, duration: '2m',
+  vus: 20, duration: '1m',
   thresholds: {
-    'http_req_duration{name:cart}':   ['p(95)<50'],    // Performance SLO 
-    'http_req_duration{name:report}': ['p(95)<450'],   // 4 дэх нэмэлт сценарио (/report)
-    'http_req_failed{name:pay}':      ['rate<0.08'],   // Reliability SLO
-    'checks':                         ['rate>0.90'],   // Availability SLO
+    'http_req_duration{name:cart}':   ['p(95)<50'],    // Cart нь хурдан тул PASS хэвээр үлдэнэ
+    'http_req_duration{name:report}': ['p(95)<100'],   // Зориуд буруу босго тавьсан тул FAIL болно
+    'http_req_failed{name:pay}':      ['rate<0.08'],   
+    'checks':                         ['rate>0.90'],   
   },
 };
  
