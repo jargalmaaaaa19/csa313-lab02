@@ -4,7 +4,7 @@ Lab 03: Quality Scenarios, SLOs, and k6 Thresholds
 
 Энэхүү лабораторийн ажлаар бид өөрсдийн бүтээсэн локал Express API серверийн гүйцэтгэл (Performance), найдвартай байдал (Reliability), болон бэлэн байдлыг (Availability) үнэлэх чанарын сценариудыг зохиож, тэдгээрийг Service Level Objectives (SLO) болон k6 автомат босго (thresholds) болгон хөрвүүлэх туршиж байна.
 
-![Threshold эвдсэн үр дүн](./screenshots/k6_version.png)
+* **Ашигласан k6 хэрэгслийн хувилбар:** `k6 v2.2.0 (commit/00a9a1b7f5, go1.26.5, linux/amd64)`
 
 1. Чанарын сценариудын тодорхойлолт 
 
