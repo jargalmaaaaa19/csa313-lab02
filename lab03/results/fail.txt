@@ -231,6 +231,7 @@ default ↓ [ 100% ] 20 VUs  1m0s
       { name:report }..............: avg=292.29ms min=97.43µs med=296ms  max=401.83ms p(90)=380.7ms  p(95)=391.41ms
     http_req_failed................: 1.57%  44 out of 2787
       { name:pay }.................: 4.73%  44 out of 929
+      exit=99
     http_reqs......................: 2787   46.636647/s
 
     EXECUTION
